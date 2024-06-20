@@ -18,7 +18,7 @@ The project is organized into the following directories:
 
 Technologies Used
 
-- Frontend: React, Vite, CSS
-- Backend: Node.js, Express
+- Frontend: React, HTML, CSS
+- Backend: Node.js, Express.js
 - Database: MongoDB, Mongoose
 - API: TMDB API for fetching movie data
