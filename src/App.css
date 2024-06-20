@@ -1,0 +1,274 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Intro section */
+.intro {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.intro-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.primarybtn {
+  width: 200px;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  padding: 10px 60px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.primarybtn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Features section */
+#features {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* About section */
+
+#about {
+    background-color: #0E1C36;
+    padding: 80px 0;
+  }
+  
+  #about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+    
+  #about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 40px;
+  }
+  
+  #about h3 {
+    font-size: 1.8rem;
+    color: #ddd;
+    margin-bottom: 30px;
+  }
+  
+  #about ol {
+    margin-bottom: 65px;
+    padding-left: 0;
+  }
+  
+  #about ol li {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+  }
+
+.navbar {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo img {
+  height: 80px;
+  margin-right: 10px;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .nav-links li {
+  font-size: 1rem;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: lightskyblue;
+}
+
+/* icons */
+.icon-heart {
+  color: maroon;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.icon-star {
+  color: gold;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.icon-comment {
+  font-size: 30px;
+  margin: 10px;
+}
+
+
+
+/* Auth form styles */
+.auth-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+  }
+  
+  .auth-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .auth-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form label {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .auth-form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .auth-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .auth-form p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .auth-form p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .auth-form p a:hover {
+    text-decoration: underline;
+  }
