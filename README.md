@@ -1,7 +1,7 @@
 Website: MoviePicks
 
 Description
-MoviePicks is a full-stack web application that allows users to discover movies, read and leave reviews, and build their personal watchlists. Built using the MERN stack (MongoDB, Express, React, Node.js), it integrates with the TMDB API to fetch movie data.
+- MoviePicks is a full-stack web application that allows users to discover movies, read and leave reviews, and build their personal watchlists. Built using the MERN stack (MongoDB, Express, React, Node.js), it integrates with the TMDB API to fetch movie data.
 
 Features
 - User Authentication: Secure sign-in and sign-up functionality for users.
