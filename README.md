@@ -31,16 +31,14 @@ Welcome to MoviePicks! This application helps you discover and manage your favor
 To run MoviePicks locally, follow these steps:
 
 1. **Clone the repository**:
-   git clone https://github.com/thasminahussain/MoviePicks.git
-   cd MoviePicks
+   git clone https://github.com/thasminahussain/MoviePicks.git. Then, cd MoviePicks.
 2. **Install dependencies**
-   Install Frontend and Backend dependencies using npm i in their respective directories
+   Install Frontend and Backend dependencies using npm i in their respective directories.
 3. **Set up environment variables**
     Create .env file the backend directory.
-    Add necessary environment variables such as TMDB API key, MongoDB URI to it. 
+    Add necessary environment variables such as TMDB API key, ATLAS_URI to it. 
 4. **Start the servers**
-    Navigate to Frontend directory and run npm run dev in the terminal
-    Navigate to Backend directory and run nodemon start in the terminal
+    Navigate to Frontend directory and run npm run dev in the terminal. Next, navigate to Backend directory and run nodemon start in the terminal.
 5. **Open the application**
-    Visit http://localhost:5173/ to view the MoviePicks frontend
+    Visit http://localhost:5173/ to view the MoviePicks frontend.
 
