@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
-// import MovieDetails from './pages/MovieDetails';
-// import Watchlist from './pages/Watchlist';
+import WatchlistPage from './pages/WatchlistPage';
+
 
 const App = () => {
   return (
@@ -14,8 +14,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
-          {/* <Route path="/movie/:id" element={<MovieDetails />} />
-          <Route path="/watchlist" element={<Watchlist />} /> */}
+          <Route path="/watchlist" element={<WatchlistPage/>} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -23,6 +22,10 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
 
 
 

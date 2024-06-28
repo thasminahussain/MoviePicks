@@ -1,15 +1,39 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../App.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 import logo from "../assets/MoviePicksLogo.png";
 
 const SignIn = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+  const [signInSuccess, setSignInSuccess] = useState(false);
 
-  const handleSignIn = (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
-    console.log(`Signing in with email: ${email} and password: ${password}`);
+
+    try {
+      const response = await fetch("http://localhost:5000/api/users/signIn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      if (response.ok) {
+        const user = await response.json();
+        console.log("User signed in successfully:", user);
+        // Update state to indicate successful sign-in
+        setSignInSuccess(true);
+      } else {
+        const errorMessage = await response.text();
+        setError(errorMessage);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setError("An error occurred. Please try again.");
+    }
   };
 
   return (
@@ -43,10 +67,21 @@ const SignIn = () => {
             required
           />
 
+          {error && <p className="error-message">{error}</p>}
+
           <button type="submit">Sign In</button>
         </form>
 
-        <p>Don't have an account? <Link to="/signUp">Sign Up</Link></p>
+        <p>
+          Don't have an account? <Link to="/signUp">Sign Up</Link>
+        </p>
+
+        {signInSuccess && (
+          <p>
+            Signed in successfully! Redirecting to{" "}
+            <Link to="/watchlist">Watchlist</Link>
+          </p>
+        )}
       </div>
     </div>
   );
